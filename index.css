@@ -15,6 +15,7 @@ body li{
 
 .ImgBack{
     background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg')  0% 0% no-repeat padding-box;
+    background-size: cover;
     width: 851px;
     height: 768px;
 
@@ -98,7 +99,7 @@ body li{
 
 
 .platform{
-    width: 970px;
+    width: 90%;
 
     margin: 0 auto;
     margin-top: 250px;
@@ -112,8 +113,9 @@ body li{
 
 .platform ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .platform li{
@@ -145,9 +147,358 @@ body li{
     margin-top: 24px;
 
     text-align: center;
-    font: normal normal normal 16px/24px Noto Sans TC;
+    font: normal normal normal 16px Noto Sans TC;
     letter-spacing: 0px;
     color: #747474;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.feature .featureList{
+    width: 50%;
+}
+
+.feature .featureSlogan{
+    width: 50%;
+}
+
+.feature .featureList ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 500px;
+
+    margin-top: 130px;
+}
+
+.feature .featureList li{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+
+    width: 230px;
+    height: 280px;
+
+}
+
+.feature .featureList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature .featureList .featureImg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 86px;
+    height: 86px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 60px;
+
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.feature .featureList img{
+    margin-left: 20px;
+}
+
+.feature .featureList h5{
+    width: 166px;
+
+    font: normal normal bold 18px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    margin-top: 24px;
+    margin-left: 32px;
+}
+
+.feature .featureList p{
+    width: 166px;
+
+    font: normal normal normal 16px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    margin-top: 16px;
+    margin-left: 32px;
+}
+
+.feature .featureSlogan{
+    margin-top: 100px;
+}
+
+.feature .featureSlogan h4{
+    font: normal normal bold 32px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.feature .featureSlogan p{
+    margin-top: 16px;
+
+    font: normal normal normal 18px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.feature .featureSlogan span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 24px;
+
+    width: 136px;
+    height: 49px;
+    /* UI Properties */
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+
+    color: #FFFFFF;
+}
+
+.evaluation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.evaluation h4{
+    display: flex;
+    justify-content: center;
+
+    font: normal normal bold 32px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    width: 100%;
+}
+
+.evaluation .evaluationList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.evaluation .evaluationList .evaluationListCard{
+    margin-right: 14px;
+}
+
+.evaluation .evaluationCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 352px;
+    height: 248px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+
+    position: relative;
+
+    margin-top: 104px;
+}
+
+.evaluation .evaluationCard  .evaluationBall {
+    position: absolute;
+    z-index: -99999;
+    top: -110px;
+    left: -90px;
+}
+
+.evaluation .evaluationCard .userImg{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 60px;
+
+    position: absolute;
+    top: -50px;
+    left: 32px;
+}
+
+.evaluation .evaluationCard .evaluationContent{
+    font: normal normal normal 16px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    margin: 0 32px;
+    margin-top: 48px;
+}
+
+.evaluation .evaluationCard h5{
+    font: normal normal bold 16px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    margin: 0 32px;
+}
+
+.evaluation .evaluationCard hr{
+    min-width: 288px;
+
+    margin: 24px 32px;
+}
+
+.evaluation .evaluationCard .titleStar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 32px;
+    margin-bottom: 24px;
+}
+
+.evaluation .evaluationCard .title{
+    font: normal normal bold 16px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    width: 50%;
+
+    margin: 0px;
+}
+
+.evaluation .evaluationCard ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+}
+
+.evaluation .evaluationCard li{
+    margin-right: 9px;
+}
+
+.evaluation .changeList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 24px;
+}
+
+.evaluation .changeList button{
+    width: 10px;
+    height: 10px;
+    /* UI Properties */
+    background: #DDDDDD 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+
+    border: 0px;
+
+    margin-right: 8px;
+}
+
+.evaluation .changeList button:last-child{
+    width: 16px;
+
+    background: #FFD153 0% 0% no-repeat padding-box;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 100px;
+    position: relative;
+}
+
+.footer .footerImg{
+    background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg') center repeat-x padding-box;
+
+    width: 100%;
+    min-height: 503px;
+}
+
+.footer h4{
+    display: flex;
+    justify-content: center;
+
+    font: normal normal bold 32px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    width: 100%;
+
+    position: relative;
+    top: -100px;
+}
+
+.footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    position: relative;
+    top: -40px;
+}
+
+.footer a span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 136px;
+    height: 49px;
+
+    font-size: 18px;
+
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+
+    color: #FFFFFF;
+}
+
+.footer .footerCopyRight{
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+
+    width: 100%;
+    height: 56px;
+
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+
+    font: normal normal normal 16px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+
+    margin-top: 116px;
 }
 
 
@@ -271,5 +622,116 @@ body li{
 
     .platform li p{
         margin-top: 16px;
+    }
+
+    .feature{
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-top: 60px;
+    }
+
+    .feature .featureList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 90%;
+    }
+
+    .feature .featureSlogan{
+        width: 90%;
+    }
+
+    .feature .featureList ul{
+        justify-content: center;
+
+        margin-top: 32px;
+    }
+
+    .feature .featureList li{
+        margin-top: 24px;
+    }
+
+    .feature .featureList .featureImg{
+        margin-left: 24px;
+        margin-top: 32px;
+    }
+
+    .feature .featureList img{
+        margin-left: 20px;
+    }
+
+    .feature .featureList h5{
+        margin-left: 24px;
+    }
+
+    .feature .featureList p{
+        margin-top: 20px;
+        margin-left: 24px;
+    }
+
+    .feature .featureSlogan{
+        margin-top: 100px;
+    }
+
+    .feature .featureSlogan h4{
+        text-align: center;
+
+        font: normal normal bold 28px Noto Sans TC;
+    }
+
+    .feature .featureSlogan p{
+        text-align: center;
+
+        font: normal normal normal 16px Noto Sans TC;
+    }
+
+    .feature .featureSlogan a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature .featureSlogan span{
+        margin-top: 16px;
+    }
+    
+
+    .evaluation .evaluationList{
+        justify-content: center;
+    }
+
+    .evaluation .evaluationListCard{
+        display: none;
+    }
+
+    .evaluation .evaluationListCard:first-child{
+        display: block;
+    }
+
+    .footer{
+        margin-top: 60px;
+    }
+
+    .footer .footerImg{
+        background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg') center repeat-x padding-box;
+
+        min-height: 461px;
+    }
+
+    .footer h4{
+        font: normal normal bold 24px Noto Sans TC;
+
+        top: -50px;
+    }
+
+    .footer a{
+        top: -30px;
+    }
+
+    .footer .footerCopyRight{
+        margin-top: 55px;
     }
 }
