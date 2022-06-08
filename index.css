@@ -24,6 +24,28 @@ body li{
     z-index: -1;
 }
 
+.TopButton{
+    position: fixed;
+
+    bottom: 35px;
+    right: 50px;
+}
+
+.TopButton span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font: normal normal bold 18px Wendy One;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+    width: 71px;
+    height: 71px;
+
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border-radius: 60px;
+}
 
 .container {
     max-width: 85%;
@@ -93,16 +115,18 @@ body li{
     height: 534px;
 }
 
-.banner .bannerTop span{
-    display: none;
-}
-
-
 .platform{
     width: 90%;
 
     margin: 0 auto;
-    margin-top: 250px;
+}
+
+.platform .platformBall{
+    position: relative;
+    z-index: -99999;
+
+    left: -425px;
+    top: 75px;
 }
 
 .platform h4{
@@ -507,6 +531,21 @@ body li{
         display: none;
     }
 
+    .TopButton{
+        position: fixed;
+
+        bottom: 35px;
+        right: 50px;
+    }
+
+    .TopButton span{
+        font: normal normal bold 14px Wendy One;
+
+        width: 50px;
+        height: 50px;
+    }
+
+
     .container {
         max-width: 100%;
         margin: 0 auto;
@@ -563,37 +602,20 @@ body li{
 
         width: 347px;
         height: 255px;
-
-        /*position: absolute;*/
-        /*top: 55px;*/
-    }
-
-    .banner .bannerTop span{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font: normal normal normal 14px Wendy One;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-
-        width: 50px;
-        height: 50px;
-
-        background: #56C4C5 0% 0% no-repeat padding-box;
-        border-radius: 30px;
-
-        position: absolute;
-
-        bottom: -20px;
-        right: 0px;
     }
 
     .platform{
         width: 100%;
 
         margin: 0 auto;
-        margin-top: 160px;
+    }
+
+    .platform .platformBall{
+        width: 126px;
+        height: 126px;
+
+        left: -77px;
+        top: 145px;
     }
 
     .platform h4{
@@ -697,7 +719,7 @@ body li{
     .feature .featureSlogan span{
         margin-top: 16px;
     }
-    
+
 
     .evaluation .evaluationList{
         justify-content: center;
