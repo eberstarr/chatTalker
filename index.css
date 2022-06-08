@@ -1,18 +1,17 @@
-body{
-    a{
-        text-decoration: none;
-        color: #3F5D45;
-    }
-
-    ul{
-        margin: 0px;
-        padding: 0px;
-
-        li{
-            list-style-type: none;
-        }
-    }
+body a{
+    text-decoration: none;
+    color: #3F5D45;
 }
+
+body ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+body li{
+    list-style-type: none;
+}
+
 
 .ImgBack{
     background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg')  0% 0% no-repeat padding-box;
@@ -24,169 +23,253 @@ body{
     z-index: -1;
 }
 
-.container{
-    width: 1366px;
+
+.container {
+    max-width: 85%;
     margin: 0 auto;
-
-    .nav {
-        height: 88px;
-
-        ul{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            width: 100%;
-
-            .logo img{
-                width: 212px;
-            }
-
-            .price span{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                width: 128px;
-                height: 40px;
-
-                background: #FF5D50;
-                border-radius: 22px;
-
-                font: normal normal normal 16px Noto Sans TC;
-                color: #FFFFFF;
-            }
-        }
-    }
-
-    .banner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .slogan{
-            h1{
-                font: normal normal bold 18px Noto Sans TC;
-                letter-spacing: 0px;
-                color: #56C4C5;
-            }
-
-            h2{
-                font: normal normal bold 48px Noto Sans TC;
-                letter-spacing: 0px;
-                color: #221E1F;
-            }
-
-            h3{
-                font: normal normal normal 20px Noto Sans TC;
-                letter-spacing: 0px;
-                color: #221E1F;
-            }
-        }
-
-        .bannerImg{
-            .bannerImgLike{
-                background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg') 0% 0% no-repeat padding-box;
-
-                width: 532px;
-                height: 534px;
-            }
-
-            .bannerTop span{
-                display: none;
-            }
-        }
-    }
 }
 
-@media (max-width: 375px) {
+.nav {
+    height: 88px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.nav .logo img{
+    width: 212px;
+}
+
+.nav .price span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 128px;
+    height: 40px;
+
+    background: #FF5D50;
+    border-radius: 22px;
+
+    font: normal normal normal 16px Noto Sans TC;
+    color: #FFFFFF;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .slogan h1{
+    font: normal normal bold 18px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+}
+
+.banner .slogan h2{
+    font: normal normal bold 48px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.banner .slogan h3{
+    font: normal normal normal 20px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.banner .bannerImgLike{
+    background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg') 0% 0% no-repeat padding-box;
+
+    width: 532px;
+    height: 534px;
+}
+
+.banner .bannerTop span{
+    display: none;
+}
+
+
+.platform{
+    width: 970px;
+
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.platform h4{
+    text-align: center;
+    font: normal normal bold 32px Noto Sans TC;
+    color: #221E1F;
+}
+
+.platform ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform li{
+    width: 250px;
+}
+
+.platform .platformImg{
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.platform .platformMessenger, .platform .platformLine, .platform .platformIG{
+    width: 90px;
+    height: 90px;
+}
+
+.platform li h5{
+    margin-top: 24px;
+
+    text-align: center;
+    font: normal normal bold 24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+
+.platform li p{
+    margin-top: 24px;
+
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #747474;
+}
+
+
+@media (max-width: 576px) {
     .ImgBack{
         display: none;
     }
 
-    .container{
-        width: 100%;
+    .container {
+        max-width: 100%;
         margin: 0 auto;
         padding: 0;
+    }
 
-        .nav{
-            height: 72px;
+    .nav{
+        height: 72px;
+        border-bottom: 1px solid #FFD153;
+    }
 
-            border-bottom: 1px solid #FFD153;
+    .nav ul{
+        width: 90%;
+        margin: 0 auto;
+    }
 
-            ul{
-                width: 90%;
-                margin: 0 auto;
+    .nav ul .logo img{
+        width: 130px;
+    }
 
-                border: 3px soild #FFD153;
-                /*border-bottom: 1px soild #FFD153;*/
+    .banner {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
 
-                .logo img{
-                    width: 130px;
-                }
-            }
-        }
+        margin-top: 32px;
+    }
 
-        .banner{
-            flex-wrap: wrap;
-            width: 90%;
-            margin: 0 auto;
+    .banner .slogan h2{
+        font-size: 32px;
+    }
+    .banner .slogan h3{
+        font-size: 16px;
+    }
 
-            margin-top: 32px;
+    .banner .bannerImg {
+        margin-top: 32px;
 
-            .slogan{
-                h2{
-                    font-size: 32px;
-                }
-                h3{
-                    font-size: 16px;
-                }
-            }
-            .bannerImg{
-                margin-top: 32px;
+        position: relative;
+    }
 
-                position: relative;
+    .banner .bannerImgLike{
+        width: 304px;
+        height: 305px;
 
-                .bannerImgLike{
-                    width: 304px;
-                    height: 305px;
+        position: absolute;
+    }
 
-                    position: absolute;
-                }
+    .banner .bannerImgBack {
+        z-index: -1;
 
-                .bannerImgBack{
-                    z-index: -1;
+        background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg') 0% 0% no-repeat padding-box;
 
-                    background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg') 0% 0% no-repeat padding-box;
+        width: 347px;
+        height: 255px;
 
-                    width: 347px;
-                    height: 255px;
+        /*position: absolute;*/
+        /*top: 55px;*/
+    }
 
-                    position: absolute;
-                    top: 55px;
+    .banner .bannerTop span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-                    .bannerTop span{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+        font: normal normal normal 14px Wendy One;
+        letter-spacing: 0px;
+        color: #FFFFFF;
 
-                        font: normal normal normal 14px Wendy One;
-                        letter-spacing: 0px;
-                        color: #FFFFFF;
+        width: 50px;
+        height: 50px;
 
-                        width: 50px;
-                        height: 50px;
+        background: #56C4C5 0% 0% no-repeat padding-box;
+        border-radius: 30px;
 
-                        background: #56C4C5 0% 0% no-repeat padding-box;
-                        border-radius: 30px;
+        position: absolute;
 
-                        position: absolute;
+        bottom: -20px;
+        right: 0px;
+    }
 
-                        bottom: -20px;
-                        right: 0px;
-                    }
-                }
-            }
-        }
+    .platform{
+        width: 100%;
+
+        margin: 0 auto;
+        margin-top: 160px;
+    }
+
+    .platform h4{
+        font: normal normal bold 28px Noto Sans TC;
+    }
+
+    .platform ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .platform .platformImg{
+        margin-top: 24px;
+    }
+
+    .platform .platformMessenger, .platform .platformLine, .platform .platformIG{
+        width: 60px;
+        height: 60px;
+    }
+
+    .platform li h5{
+        margin-top: 16px;
+
+        font: normal normal bold 18px Noto Sans TC;
+    }
+
+    .platform li p{
+        margin-top: 16px;
     }
 }
