@@ -1,0 +1,192 @@
+body{
+    a{
+        text-decoration: none;
+        color: #3F5D45;
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+.ImgBack{
+    background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg')  0% 0% no-repeat padding-box;
+    width: 851px;
+    height: 768px;
+
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+
+    .nav {
+        height: 88px;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+
+            .logo img{
+                width: 212px;
+            }
+
+            .price span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 128px;
+                height: 40px;
+
+                background: #FF5D50;
+                border-radius: 22px;
+
+                font: normal normal normal 16px Noto Sans TC;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .slogan{
+            h1{
+                font: normal normal bold 18px Noto Sans TC;
+                letter-spacing: 0px;
+                color: #56C4C5;
+            }
+
+            h2{
+                font: normal normal bold 48px Noto Sans TC;
+                letter-spacing: 0px;
+                color: #221E1F;
+            }
+
+            h3{
+                font: normal normal normal 20px Noto Sans TC;
+                letter-spacing: 0px;
+                color: #221E1F;
+            }
+        }
+
+        .bannerImg{
+            .bannerImgLike{
+                background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home.svg') 0% 0% no-repeat padding-box;
+
+                width: 532px;
+                height: 534px;
+            }
+
+            .bannerTop span{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .ImgBack{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+
+        .nav{
+            height: 72px;
+
+            border-bottom: 1px solid #FFD153;
+
+            ul{
+                width: 90%;
+                margin: 0 auto;
+
+                border: 3px soild #FFD153;
+                /*border-bottom: 1px soild #FFD153;*/
+
+                .logo img{
+                    width: 130px;
+                }
+            }
+        }
+
+        .banner{
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+
+            margin-top: 32px;
+
+            .slogan{
+                h2{
+                    font-size: 32px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+            }
+            .bannerImg{
+                margin-top: 32px;
+
+                position: relative;
+
+                .bannerImgLike{
+                    width: 304px;
+                    height: 305px;
+
+                    position: absolute;
+                }
+
+                .bannerImgBack{
+                    z-index: -1;
+
+                    background: transparent url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg') 0% 0% no-repeat padding-box;
+
+                    width: 347px;
+                    height: 255px;
+
+                    position: absolute;
+                    top: 55px;
+
+                    .bannerTop span{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        font: normal normal normal 14px Wendy One;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+
+                        width: 50px;
+                        height: 50px;
+
+                        background: #56C4C5 0% 0% no-repeat padding-box;
+                        border-radius: 30px;
+
+                        position: absolute;
+
+                        bottom: -20px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
